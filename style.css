@@ -56,6 +56,7 @@ a{
     }
     .navbar_head{
         display: block;
+        overflow-y: hidden;
     }
     #navbar_ul{
         position: absolute;
@@ -63,7 +64,7 @@ a{
       display: flex;  
       flex-direction: column;
       justify-content: center;
-      overflow-y: hidden;
+      
       text-align: center;
        background:rgb(54, 53, 53);
        transform: translateX(-120%);
