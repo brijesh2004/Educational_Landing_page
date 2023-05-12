@@ -57,22 +57,22 @@ setInterval(function() {
 
 // accordian scripting
 
-let acc = document.getElementsByClassName("accorbtn");
-let downarrow = document.getElementsByClassName("downarrow");
+// let acc = document.getElementsByClassName("accorbtn");
+// let downarrow = document.getElementsByClassName("downarrow");
 
-for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-      downarrow[i].innerHTML=`<i class="fa fa-arrow-down"></i>`;
-    } else {
-      panel.style.display = "block";
-      downarrow[i].innerHTML=`<i class="fa fa-arrow-up"></i>`;
-    }
-  });
-}
+// for (let i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//       downarrow[i].innerHTML=`<i class="fa fa-arrow-down"></i>`;
+//     } else {
+//       panel.style.display = "block";
+//       downarrow[i].innerHTML=`<i class="fa fa-arrow-up"></i>`;
+//     }
+//   });
+// }
 
 
 const light = document.getElementById("light");
