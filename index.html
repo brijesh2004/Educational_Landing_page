@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- font links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Educational Landing Page</title>
+  </head>
+  <body id="body">
+    <!-- Creating the Navbar -->
+
+    <!--*************************** starting of the navbar  *******************************-->
+
+    <nav class="navbar">
+      <div class="navbar_head">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+          "
+        >
+          <h3>ACADEMIA</h3>
+          <i
+            class="fa fa-bars"
+            id="toggle"
+            style="font-size: 40px; color: white; margin-top: 10px"
+            onclick="ToggletheNavbar()"
+          ></i>
+          <!-- <i class="fa fa-times-circle" id="closetoggle" style="font-size:48px;color:white" onclick="ToggleClose()"></i> -->
+          <i class="fa fa-close" id="closetoggle" style="font-size:48px;" onclick="ToggleClose()"></i>
+        </div>
+        <div>
+          <ul id="navbar_ul">
+            <li class="navbar_li"><a href="#home">Home</a></li>
+            <li class="navbar_li"><a href="#about">About</a></li>
+            <li class="navbar_li"><a href="#course">Course</a></li>
+            <li class="navbar_li"><a href="#student">Studens</a></li>
+            <li class="navbar_li"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--****************** navbar section end *****************************-->
+
+   <!-- light dark toggle  start-->
+    <div class="light_dark">
+        <button id="light" onclick="ToggleDarkMode()"><img src="Images/light.png" alt="" class="light_dark_bnt"></button> 
+        <button id="dark" onclick="ToggleDarkMode()"><img src="Images/dark.png" alt="" class="light_dark_bnt"></button> 
+    </div>
+
+   <!-- light dark toggle  start-->
+
+
+
+    <!-- *******************************Creating  a slider  ******************************************-->
+   
+    <!-- ************************************Slider section start from here *****************************************-->
+    <div class="carousel">
+      <div class="slide-container">
+        <img src="Images/slider1.jpg" class="slide">
+        <img src="Images/slider2.jpg" class="slide">
+        <img src="Images/slider3.jpg" class="slide">
+      </div>
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  
+    
+    
+    <!--******************************** Slider section end from here ***********************************************-->
+
+    <!-- Home section start from here -->
+    <div class="homesection" id="about">
+      <div class="rightpart">
+        <h3>Welcome to ACADEMIA</h3>
+        <h1 class="h1">Best Online Education</h1>
+        <h1 class="h1">Expertise</h1>
+
+        <p style="font-size: 25px">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, eaque
+          aut possimus, atque, delectus harum deserunt
+        </p>
+        <!-- <input type="submit" value="Register " class="registerbtn" /> -->
+        <button class="registerbtn">
+          Get Started Now <i class="fa fa-long-arrow-right"></i>
+        </button>
+        <button class="viewcourse">
+          View Course <i class="fa fa-long-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Home section end from here -->
+
+    <!-- befinites of learning  start-->
+
+    <div class="benifit_of_learning">
+      <div class="benifite_left_part">
+        <img src="Images/benifit_img.jpg" alt="" srcset="" />
+      </div>
+      <div class="benifite_right_part">
+        <h4 style="color: rgb(4, 105, 105)">LEARN ANYTHING</h4>
+        <h1 class="h1">Benefits About Online Learning Expertise</h1>
+        <div class="benifit_parts">
+          <div class="benifit_parts_flex">
+            <div class="benifit_images">
+              <img src="Images/online_course.png" alt="" />
+            </div>
+            <div>
+              <h2>Online Course</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                quasi voluptate neque perferendis obcaecati. Ut.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="benifit_parts">
+          <div class="benifit_parts_flex">
+            <div class="benifit_images">
+              <img src="Images/cirtificate.png" alt="" />
+            </div>
+            <div>
+              <h2>Earn A Certificates</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                quasi voluptate neque perferendis obcaecati. Ut.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="benifit_parts">
+          <div class="benifit_parts_flex">
+            <div class="benifit_images">
+              <img src="Images/tutors.png" alt="" />
+            </div>
+            <div>
+              <h2>Learn with Expert</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+                quasi voluptate neque perferendis obcaecati. Ut.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- befinites of learning  end-->
+
+
+
+   <!-- success story start  -->
+     <div class="success_stories">
+        <div class="success_stories_part">
+          <div class="success_part_img">
+            <img src="Images/success.png" alt="">
+          </div>
+          <div>
+            <h1>3000</h1>
+            <h4>SUCCESS STORIES</h4>
+          </div>
+        </div>
+
+        <div class="success_stories_part">
+          <div class="success_part_img">
+            <img src="Images/tutors.png" alt="">
+          </div>
+          <div>
+            <h1>320</h1>
+            <h4>TRUSTED TUTORSS</h4>
+          </div>
+        </div>
+        <div class="success_stories_part">
+          <div class="success_part_img">
+            <img src="Images/sedual.png" alt="">
+          </div>
+          <div>
+            <h1>1000</h1>
+            <h4>SCHEDULES</h4>
+          </div>
+        </div>
+        <div class="success_stories_part">
+          <div class="success_part_img">
+            <img src="Images/courses.png" alt="">
+          </div>
+          <div>
+            <h1>630</h1>
+            <h4>COURSES</h4>
+          </div>
+        </div>
+     </div>
+
+   <!-- success story End -->
+
+
+       
+        <!-- explore our popular course section start  -->
+         <h3 style="text-align: center; margin-top: 80px; color: rgb(4, 105, 105);" id="course">OUR COURSES</h3>
+         <h1 style="text-align: center; margin-bottom: 30px;">Explore Our Popular Online Courses</h1>
+ 
+
+         <div class="boxes_of_course">
+          <div class="course_box">
+              <h1>Frontend Developer</h1>
+              <p>Topic Covered </p>
+              <h4 style="color: rgb(136, 50, 138);">HTML , CSS ,BOOTSTRAP , JAVASCRIPT</h4>
+              <P>prices - 999  &#x20B9;</P>
+              <h4>BY - Kushagra Sharma</h4>
+              <button class="registerbtn">Buy Course </button>
+          </div>
+
+          <div class="course_box">
+            <h1>Backend Developer</h1>
+            <p>Topic Covered </p>
+            <h4 style="color: rgb(136, 50, 138);">NODE JS,EXPRESS JS , MONGODB</h4>
+            <P>prices - 999  &#x20B9;</P>
+            <h4>BY - Baljeet </h4>
+            <button class="registerbtn">Buy Course </button>
+        </div>
+
+        <div class="course_box">
+          <h1>MERN</h1>
+          <p>Topic Covered </p>
+          <h4 style="color: rgb(136, 50, 138);">MONGODB ,EXPRESS JS ,REACT ,NODE JS</h4>
+          <P>prices - 1999  &#x20B9;</P>
+          <h4>BY - Ajeet Yadav </h4>
+          <button class="registerbtn">Buy Course </button>
+      </div>
+
+      <div class="course_box">
+        <h1>C/C++ Language</h1>
+        <p>Topic Covered </p>
+        <h4 style="color: rgb(136, 50, 138);">C , C++</h4>
+        <P>prices - 999  &#x20B9;</P>
+        <h4>BY - Baljeet </h4>
+        <button class="registerbtn">Buy Course </button>
+    </div>
+
+    <div class="course_box">
+      <h1>Backend Developer</h1>
+      <p>Topic Covered </p>
+      <h4 style="color: rgb(136, 50, 138);">NODE JS,EXPRESS JS , MONGODB ,EXPRESS</h4>
+      <P>prices - 999  &#x20B9;</P>
+      <h4>BY - Baljeet </h4>
+      <button class="registerbtn">Buy Course </button>
+  </div>
+
+  <div class="course_box">
+    <h1>Backend Developer</h1>
+    <p>Topic Covered </p>
+    <h4 style="color: rgb(136, 50, 138);">NODE JS,EXPRESS JS , MONGODB ,EXPRESS</h4>
+    <P>prices - 999  &#x20B9;</P>
+    <h4>BY - Baljeet </h4>
+    <button class="registerbtn">Buy Course </button>
+</div>
+         </div>
+
+         <!-- explore our popular course section End -->
+
+
+       <!-- our successfull students section start  -->
+
+
+         <h3 style="text-align: center; margin-top: 80px; color: rgb(4, 105, 105);" id="student">TESTIMONIAL</h3>
+         <h1 style="text-align: center; margin-bottom: 70px;">Our Successful Students</h1>
+ 
+
+         <div class="boxes_of_course">
+          <div class="course_box">
+              <img src="Images/tutors.png" class="profile_img">
+              <h1>Ajeet Kumar</h1>
+              <p>JAVA Developer</p>
+              <h4>Company -: Google</h4>
+               <img src="Images/instagram.png" class="profile_social">
+               <img src="Images/Facebook.png" class="profile_social">
+               <img src="Images/linkedIn.png" class="profile_social">
+          </div>
+
+          <div class="course_box">
+            <img src="Images/tutors.png" class="profile_img">
+            <h1>Ashwani Kumar</h1>
+            <p>MERN Developer</p>
+            <h4>Company -: MICROSOFT</h4>
+             <img src="Images/instagram.png" class="profile_social">
+             <img src="Images/Facebook.png" class="profile_social">
+             <img src="Images/linkedIn.png" class="profile_social">
+        </div>
+
+        <div class="course_box">
+          <img src="Images/tutors.png" class="profile_img">
+          <h1>Himanshu  Singh</h1>
+          <p>ETHICAL HACKER</p>
+          <h4>Company -: Google</h4>
+           <img src="Images/instagram.png" class="profile_social">
+           <img src="Images/Facebook.png" class="profile_social">
+           <img src="Images/linkedIn.png" class="profile_social">
+      </div>
+
+      <div class="course_box">
+        <img src="Images/tutors.png" class="profile_img">
+        <h1>Pankaj Singh</h1>
+        <p>VIDEO EDITOR</p>
+        <h4>Company -: TCS</h4>
+         <img src="Images/instagram.png" class="profile_social">
+         <img src="Images/Facebook.png" class="profile_social">
+         <img src="Images/linkedIn.png" class="profile_social">
+    </div>
+
+    <div class="course_box">
+      <img src="Images/tutors.png" class="profile_img">
+      <h1>Manohar Rai</h1>
+      <p>DATA SCIENCE ENGINEER</p>
+      <h4>Company -: Google</h4>
+       <img src="Images/instagram.png" class="profile_social">
+       <img src="Images/Facebook.png" class="profile_social">
+       <img src="Images/linkedIn.png" class="profile_social">
+  </div>
+
+  <div class="course_box">
+    <img src="Images/tutors.png" class="profile_img">
+    <h1>Aadarsh Rawat</h1>
+    <p>ML ENGINEER</p>
+    <h4>Company -: MICROSOFT</h4>
+     <img src="Images/instagram.png" class="profile_social">
+     <img src="Images/Facebook.png" class="profile_social">
+     <img src="Images/linkedIn.png" class="profile_social">
+</div>
+         </div>
+         
+
+    
+   
+            
+              <!-- our successfull students section end  -->
+
+
+ <!-- our Resent block section start   -->
+ <h3 style="text-align: center; margin-top: 80px; color: rgb(4, 105, 105);">OUR BLOG</h3>
+ <h1 style="text-align: center; margin-bottom: 70px;">Recent From Blog</h1>
+
+
+ <div class="boxes_of_course1">
+  <div class="course_box">
+      <img src="Images/blog3.jpg" class="blog_img">
+      <p class="blog_title">Build your Dream Software & Engineering Career</p>
+      <p class="blog_hint">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+      <p class="blog_hint"><a href="" style="margin-bottom: 20px;">Read More</a></p> 
+  </div>
+
+  <div class="course_box">
+    <img src="Images/blog2.jpg" class="blog_img">
+    <p class="blog_title">Build your Dream Software & Engineering Career</p>
+    <p class="blog_hint">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    <p class="blog_hint"><a href="" style="margin-bottom: 20px;">Read More</a></p> 
+</div>
+
+<div class="course_box">
+  <img src="Images/blog3.jpg" class="blog_img">
+  <p class="blog_title">Build your Dream Software & Engineering Career</p>
+  <p class="blog_hint">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+  <p class="blog_hint"><a href="" style="margin-bottom: 20px;">Read More</a></p> 
+</div>
+</div>
+
+
+
+ <!-- our Resent block section end   -->
+
+
+
+
+
+              
+        <!-- contact page start from here -->
+      
+        <div class="contact_form" id="contact">
+          <h1>GET IN TOUCH </h1>
+          <div>
+            <input type="text" placeholder=" First Name" class="input">
+            <input type="text" placeholder=" last Name" class="input"> <br>
+            <input type="email" placeholder="Email" class="input">
+            <input type="number" placeholder="Mobile Number" class="input"> <br>
+
+            <input type="text" placeholder="Address" class="address_inp"><br>
+            <textarea name="" id="" cols="30" rows="10" class="input_text_area" placeholder="Write your message here"></textarea><br>
+            <button class="registerbtn">Submit</button>
+          </div>
+        </div>
+
+
+        <!-- contact page start from here -->
+
+    <!-- footer section start from here  -->
+
+    <footer class="footer_start">
+      <div class="footer_main_div">
+        <div class="social_png_images">
+          <a href=""
+            ><img src="Images/instagram.png" alt="instagram" class="social_png"
+          /></a>
+          <br />
+          <a href="">
+            <img src="Images/Facebook.png" alt="Facebook" class="social_png"
+          /></a>
+          <br />
+          <a href="">
+            <img src="Images/linkedIn.png" alt="linkedIn" class="social_png"
+          /></a>
+          <br />
+          <a href="">
+            <img src="Images/twitter.png" alt="linkedIn" class="social_png"
+          /></a>
+          <br />
+        </div>
+        <div>
+          <h3>Have a Questions?</h3> <br>
+          <h5>Address -:  203 Fake St. Mountain View, San Francisco, California, USA</h5><br>
+          <h5>Mobile Number -: 	+9178472280</h5><br>
+          <h5>Email -: 	info@yourdomain.com</h5>
+        </div>
+      </div>
+      <h3 style="text-align: center;">Copyright © 2023 All rights reserved </h3>
+    </footer>
+
+    <!-- footer section End from here  -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
